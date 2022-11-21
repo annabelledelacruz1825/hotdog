@@ -14,7 +14,7 @@ hotdog_buns_package = 8
 
 #The program should display the following details:
 total__hotdogs = people_attending * hotdog_given 
-#print ("Total Hotdogs is ", total__hotdogs)
+#3print ("Total Hotdogs is ", total__hotdogs)
  
 # The minimum number of packages of hot dogs required
 min_hotdog_package =  total__hotdogs / hotdog_package #
@@ -22,8 +22,7 @@ min_hotdog_package =  total__hotdogs / hotdog_package #
 
 # The minimum number of packages of hot dog buns required
 min_hotdog_buns = total__hotdogs / hotdog_buns_package
-#print("Min buns needed", hotdog_buns)
-
+#print("Min buns needed", min_hotdog_buns)
 # The number of hot dogs that will be left over
 hotdog_leftover = total__hotdogs % hotdog_package 
 #print ("Leftover Hotdog" , hotdog_leftover)
@@ -35,7 +34,7 @@ buns_lefover = total__hotdogs % hotdog_buns_package
  
 
 print(f"Hotdog needed is: {total__hotdogs}")
-print(f"Min Hotdog packages needed is: {math.ceil(min_hotdog_package)}")
+print(f"Min Hotdog packages needed is: {math.ceil(min_hotdog_package)} ")
 print(f"Min Hotdog buns needed is: {math.ceil(min_hotdog_buns)}")
 print(f"Hotdog left over: {math.ceil(hotdog_leftover) }")
 print(f"Hotdog buns left over:{math.ceil(buns_lefover)}")
